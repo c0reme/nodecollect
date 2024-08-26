@@ -1,0 +1,12 @@
+{
+  "extends": "@sapphire/ts-config",
+  "compilerOptions": {
+    "module": "Node16",
+    "target": "ES2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "sourceMap": true,
+    "declarationMap": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "nodecollect",
+  "version": "1.0.0",
+  "description": "A NodeJS wrapper that easily interacts with the FFXIV Collect API.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "repository": "https://github.com/c0reme/nodecollect.git",
+  "author": "c0reme (https://cammy.xyz/)",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write \"{src,tests}/**/*.{mjs,js,ts}\"",
+    "test": "jest",
+    "build": "tsup",
+    "update": "yarn --update-interactive"
+  },
+  "dependencies": {
+    "axios": "^1.7.4"
+  },
+  "devDependencies": {
+    "@sapphire/ts-config": "^5.0.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.0",
+    "esbuild-plugin-version-injector": "^1.2.1",
+    "jest": "^29.7.0",
+    "prettier": "3.3.3",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  },
+  "files": [
+    "dist",
+    "!dist/.tsbuildinfo",
+    "*.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
