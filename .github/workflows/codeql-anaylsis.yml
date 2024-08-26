@@ -13,7 +13,12 @@ jobs:
     name: Codecov Analysis
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4.1.7
-      - name: CodeQL bundle
-        uses: advanced-security/codeql-bundle-action@v2.2.0
+      - uses: actions/checkout@v3
+      - name: Prepare CodeQL Analysis
+        uses: codebeltnet/codeql-scan@v1
+      - name: Build
+        uses: codebeltnet/dotnet-build@v1
+        with:
+          uploadBuildArtifact: false
+      - name: Finalize CodeQL Analysis
+        uses: codebeltnet/codeql-scan-finalize@v1
