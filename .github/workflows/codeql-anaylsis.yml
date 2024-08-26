@@ -1,0 +1,19 @@
+name: Code Coverage
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  codeql-analysis:
+    name: Codecov Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4.1.7
+      - name: CodeQL bundle
+        uses: advanced-security/codeql-bundle-action@v2.2.0
