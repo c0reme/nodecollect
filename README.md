@@ -1,5 +1,7 @@
 # nodecollect
 
+![NPM Version](https://img.shields.io/npm/v/nodecollect?logo=npm&color=red)
+
 ## About
 
 A [NodeJS](https://nodejs.org/) wrapper that easily interacts with the [FFXIV Collect API](https://ffxivcollect.com/).
